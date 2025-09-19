@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const socials = [
   {
-    link: "https://www.linkedin.com/in/sebastian-osorio-615668252/",
+    link: "https://www.linkedin.com/in/sebastian-osorio4/",
     label: "LinkedIn",
     Icon: SiLinkedin,
   },
@@ -18,7 +18,7 @@ const socials = [
     link: "/Sebastian-Osorio-CV.pdf",
     label: "Download CV",
     Icon: FaFilePdf,
-    download: true, // Marcador para descarga
+    download: true,
   },
 ];
 

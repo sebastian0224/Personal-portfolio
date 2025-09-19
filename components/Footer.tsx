@@ -18,7 +18,7 @@ const Footer = () => {
       link: "/Sebastian-Osorio-CV.pdf",
       label: "Download CV",
       Icon: FaFilePdf,
-      download: true, // Marcador para descarga
+      download: true,
     },
   ];
 
