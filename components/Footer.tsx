@@ -5,7 +5,7 @@ import { FaFilePdf } from "react-icons/fa";
 const Footer = () => {
   const socials = [
     {
-      link: "https://www.linkedin.com/in/sebastian-osorio-615668252/",
+      link: "https://www.linkedin.com/in/sebastian-osorio4/",
       label: "LinkedIn",
       Icon: SiLinkedin,
     },
