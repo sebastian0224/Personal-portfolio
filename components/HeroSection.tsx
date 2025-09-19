@@ -15,9 +15,10 @@ const socials = [
     Icon: SiGithub,
   },
   {
-    link: "/cv.pdf", // ⚠️
+    link: "/Sebastian-Osorio-CV.pdf",
     label: "Download CV",
     Icon: FaFilePdf,
+    download: true, // Marcador para descarga
   },
 ];
 
@@ -34,7 +35,7 @@ const HeroSection = () => {
         </h1>
         <p className="md:w-96 text-lg text-gray-300">
           {
-            "I’m a Full-Stack Developer from Colombia, combining technical skills with creativity to build modern web apps. Focused on React, Next.js, Node.js, and databases to deliver solutions that improve user experiences."
+            "I'm a Full-Stack Developer from Colombia, combining technical skills with creativity to build modern web apps. Focused on React, Next.js, Node.js, and databases to deliver solutions that improve user experiences."
           }
         </p>
 
@@ -46,7 +47,8 @@ const HeroSection = () => {
                 href={elem.link}
                 key={index}
                 aria-label={elem.label}
-                target={elem.link.endsWith(".pdf") ? "_blank" : "_self"}
+                target={elem.download ? "_blank" : "_self"}
+                download={elem.download ? "Sebastian_Osorio_CV.pdf" : undefined}
                 className="flex items-center gap-2 px-4 py-2 bg-gray-800 text-white rounded-lg border border-gray-700 hover:bg-gray-700 transition-all"
               >
                 <Icon className="w-5 h-5" />

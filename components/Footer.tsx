@@ -15,9 +15,10 @@ const Footer = () => {
       Icon: SiGithub,
     },
     {
-      link: "/cv.pdf", // ⚠️
+      link: "/Sebastian-Osorio-CV.pdf",
       label: "Download CV",
       Icon: FaFilePdf,
+      download: true, // Marcador para descarga
     },
   ];
 
@@ -34,7 +35,8 @@ const Footer = () => {
               href={elem.link}
               key={index}
               aria-label={elem.label}
-              target={elem.link.endsWith(".pdf") ? "_blank" : "_self"}
+              target={elem.download ? "_blank" : "_self"}
+              download={elem.download ? "Sebastian_Osorio_CV.pdf" : undefined}
             >
               <Icon className="w-6 h-6 hover:scale-125 transition-all" />
             </Link>
